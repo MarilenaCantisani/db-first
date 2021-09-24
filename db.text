@@ -1,3 +1,33 @@
 
 
+ENTITY: Car
+NOME TABELLA: Cars 
 
+
+CHARACTERISTICS:                     DATATYPE:                            ATTRIBUTES:                                                   NOTE:
+
+ID                                   INT                                  PRIMARY_KEY (NOT_NULL - UNIQUE - AUTO_INCREMENT )
+CAR MANUFACTURER                     VARCHAR(100)                         NOT_NULL 
+CAR_MODEL                            VARCHAR(100)                         NOT_NULL
+PRICE                                FLOAT(3,3)                           NOT_NULL 
+TYPE_CAR                             CHAR(2)                              NULL                                                          It is planned to enter a two-digit code corresponding to the vehicle type
+KM                                   FLOAT(2,3)                           NOT_NULL
+YEAR                                 YEAR                                 NOT_NULL
+FEED                                 VARCHAR(50)                          NOT_NULL
+TRANSMISSION                         VARCHAR(50)                          NOT_NULL 
+CONDITION                            VARCHAR(20)                          NOT_NULL
+HORSEPOWER                           TINYINT                              NULL 
+DISPLACEMENT                         FLOAT(4,2)                           NULL 
+MARCHES                              TINYINT(1)                           NULL
+TRACTION                             VARCHAR(15)                          NULL
+COLOR                                VARCHAR(50)                          NULL 
+INTERIOR_TRIM                        VARCHAR(20)                          NULL 
+CAR_DOOR                             TINYINT(1)                           NULL 
+FULL_OPTIONAL                        BOOL -> (TINYINT(1))                 NULL 
+NAVIGATOR                            BOOL -> (TINYINT(1))                 NULL 
+NAVIGATOR                            BOOL -> (TINYINT(1))                 NULL 
+PARKING_SENSORS                      BOOL -> (TINYINT(1))                 NULL 
+ANTI_THEFT                           BOOL -> (TINYINT(1))                 NULL 
+CRUISE_CONTROL                       BOOL -> (TINYINT(1))                 NULL 
+DESCRIPTION                          TEXT                                 NOT_NULL 
+AVAILABLE_FROM                       DATE                                 NOT_NULL 
